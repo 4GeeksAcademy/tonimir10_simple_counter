@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Box from "./Box.jsx";
+import SecondsCounter from "./SecondsCounter.jsx";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 import { useState } from "react";
@@ -28,13 +28,13 @@ const Home = () => {
 		<>
 		<div className="text-center">
 			<div className="counter">
-				<Box number="⏱️"/>
-			<Box number={Math.floor(timer/100000)%10}/>
-			<Box number={Math.floor(timer/10000)%10}/>
-			<Box number={Math.floor(timer/1000)%10}/>
-			<Box number={Math.floor(timer/100)%10}/>
-			<Box number={Math.floor(timer/10)%10}/>
-			<Box number={Math.floor(timer%10)}/>
+				<SecondsCounter number="⏱️"/>
+			<SecondsCounter number={Math.floor(timer/100000)%10}/>
+			<SecondsCounter number={Math.floor(timer/10000)%10}/>
+			<SecondsCounter number={Math.floor(timer/1000)%10}/>
+			<SecondsCounter number={Math.floor(timer/100)%10}/>
+			<SecondsCounter number={Math.floor(timer/10)%10}/>
+			<SecondsCounter number={Math.floor(timer%10)}/>
 			</div>
             
 			<div className="buttons-container">

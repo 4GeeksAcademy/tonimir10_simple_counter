@@ -1,6 +1,6 @@
 import React from "react";
 
-const Box = ({number}) => {
+const SecondsCounter = ({number}) => {
 
     return (
         <>
@@ -10,4 +10,4 @@ const Box = ({number}) => {
 
 }
 
-export default Box;
+export default SecondsCounter;
